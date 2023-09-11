@@ -1,0 +1,25 @@
+.j-list {
+  position: relative;
+  overflow: auto;
+  .van-pull-refresh {
+    min-height: 100%;
+    .j-list-item {
+      position: relative;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      margin: 8px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+      padding: 8px;
+      transition: all 0.3s;
+      &:active {
+        background: #ececec;
+      }
+    }
+  }
+  .j-empty {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

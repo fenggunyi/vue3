@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>载入中...</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        border: 0;
+        height: 100vh;
+        width: 100vw !important;
+        overflow: hidden;
+        background-color: aliceblue !important;
+      }
+      #__loading {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -70%);
+      }
+      .spinnerSexBox {
+        background: #0088ff;
+        border-radius: 50%;
+        height: 0.5em;
+        margin: 0.05em;
+        display: inline-block;
+        width: 0.5em;
+      }
+      .p1 {
+        animation: fall 1s linear 0.3s infinite;
+      }
+      .p2 {
+        animation: fall 1s linear 0.2s infinite;
+      }
+      .p3 {
+        animation: fall 1s linear 0.1s infinite;
+      }
+      .p4 {
+        animation: fall 1s linear infinite;
+      }
+      #app {
+        position: relative;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-y: hidden;
+        height: 100vh;
+      }
+      @keyframes fall {
+        0% {
+          transform: translateY(-15px);
+        }
+        25%,
+        75% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-15px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="__loading" class="loadingSeven">
+      <div class="spinnerSexBox p1"></div>
+      <div class="spinnerSexBox p2"></div>
+      <div class="spinnerSexBox p3"></div>
+      <div class="spinnerSexBox p4"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

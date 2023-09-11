@@ -1,0 +1,38 @@
+.title-bar {
+  position: relative;
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  gap: 4px;
+  .title-top {
+    position: relative;
+    color: #1890ff;
+    font-size: 16px;
+    .title-icon {
+      position: relative;
+      top: 4px;
+      vertical-align: top;
+    }
+    .title-block {
+      position: relative;
+      top: 4px;
+      width: 4px;
+      height: 15px;
+      border-radius: 2px;
+      background-color: #1890ff;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  .title-text {
+    font-size: 16px;
+    line-height: 1.5em;
+    left: 8px;
+    font-weight: bold;
+    vertical-align: top;
+  }
+  .title-slot {
+    vertical-align: top;
+    white-space: nowrap;
+  }
+}

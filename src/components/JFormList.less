@@ -1,0 +1,40 @@
+.j-form-list-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  gap: 8px;
+  padding: 5px 8px 0 0;
+  transition: all 0.3s;
+  border-radius: 8px;
+  overflow: hidden;
+  top: -16px;
+  .drag-block {
+    position: relative;
+    top: -16px;
+    height: 120%;
+    cursor: move;
+  }
+  &:hover {
+    background-color: #f0f0f0;
+    .drag-block {
+      background-color: #dedede;
+    }
+  }
+  .j-form-list-line {
+    position: relative;
+    height: 3px;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  .j-form-list-line-top {
+    .j-form-list-line;
+    margin-bottom: 8px;
+  }
+  .j-form-list-over {
+    background-color: #c9c9c9;
+  }
+  .j-form-list-dragging {
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
